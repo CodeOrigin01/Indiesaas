@@ -1,4 +1,4 @@
-import type * as React from "react"
+import type * as React from "react";
 
 function DiscordIcon(props: React.SVGProps<SVGSVGElement> | undefined) {
     return (

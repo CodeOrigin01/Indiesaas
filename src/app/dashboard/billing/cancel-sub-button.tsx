@@ -13,21 +13,21 @@ export default function CancelSubscription() {
 	async function handleSubCancellation() {
 		try {
 			setIsPending(true);
-			const loadingToast = toast.loading("Canceling subscription...");
+			const loadingToast = toast?.loading("Canceling subscription...");
 
-			await authClient.subscription.cancel({
+			await authClient?.subscription?.cancel({
 				returnUrl: "/dashboard/plans",
 			});
 
-			toast.dismiss(loadingToast);
-			toast.success("Subscription canceled successfully");
+			toast?.dismiss(loadingToast);
+			toast?.success("Subscription canceled successfully");
 			
 			setTimeout(() => {
-				router.refresh();
+				router?.refresh();
 			}, 3000);
 		} catch (error) {
 			console.log(error);
-			toast.error("Failed to cancel subscription");
+			toast?.error("Failed to cancel subscription");
 		} finally {
 			setIsPending(false);
 		}

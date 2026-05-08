@@ -6,10 +6,10 @@ import {
     UpdateNameCard,
     UpdateAvatarCard,
     ProvidersCard
-} from "@daveyplate/better-auth-ui"
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
-import { RiUser3Line, RiShieldLine, RiAlarmWarningLine } from "@remixicon/react"
-import { PageHeader } from "@/components/layout/page-header"
+} from "@daveyplate/better-auth-ui";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { RiUser3Line, RiShieldLine, RiAlarmWarningLine } from "@remixicon/react";
+import { PageHeader } from "@/components/layout/page-header";
 
 export const metadata = {
     title: "Settings"

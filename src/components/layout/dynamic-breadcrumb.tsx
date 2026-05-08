@@ -1,7 +1,6 @@
-"use client"
-
-import { usePathname } from "next/navigation"
-import Link from "next/link"
+"use client";
+import { usePathname } from "next/navigation";
+ import Link from"next/link";
 import {
     Breadcrumb,
     BreadcrumbItem,
@@ -9,7 +8,7 @@ import {
     BreadcrumbList,
     BreadcrumbPage,
     BreadcrumbSeparator
-} from "@/components/ui/breadcrumb"
+} from "@/components/ui/breadcrumb";
 
 interface BreadcrumbSegment {
     label: string

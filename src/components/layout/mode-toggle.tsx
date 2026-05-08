@@ -1,10 +1,9 @@
-"use client"
+"use client";
+import { motion } from "framer-motion";
+import { MoonIcon, SunIcon } from "lucide-react";
+import { useTheme } from "next-themes";
 
-import { motion } from "framer-motion"
-import { MoonIcon, SunIcon } from "lucide-react"
-import { useTheme } from "next-themes"
-
-import { Button } from "../ui/button"
+import { Button } from "../ui/button";
 
 export function ModeToggle() {
     const { theme, setTheme } = useTheme()
@@ -50,5 +49,5 @@ export function ModeToggle() {
             </motion.div>
             <span className="sr-only">Toggle theme</span>
         </Button>
-    )
+    );
 }

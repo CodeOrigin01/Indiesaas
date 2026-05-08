@@ -1,15 +1,15 @@
-import { betterAuth } from "better-auth"
-import { drizzleAdapter } from "better-auth/adapters/drizzle"
-import { stripe } from "@better-auth/stripe"
-import Stripe from "stripe"
-import { headers } from "next/headers"
-import { Resend } from "resend"
-import { EmailTemplate } from "@daveyplate/better-auth-ui/server"
-import React from "react"
-import { db } from "@/database/db"
-import * as schema from "@/database/schema"
-import { type Plan, plans } from "@/lib/payments/plans"
-import { site } from "@/config/site"
+import { betterAuth } from "better-auth";
+import { drizzleAdapter } from "better-auth/adapters/drizzle";
+import { stripe } from "@better-auth/stripe";
+ import Stripe from"stripe";
+import { headers } from "next/headers";
+import { Resend } from "resend";
+import { EmailTemplate } from "@daveyplate/better-auth-ui/server";
+ import React from"react";
+import { db } from "@/database/db";
+ import * as schema from"@/database/schema";
+import { type Plan, plans } from "@/lib/payments/plans";
+import { site } from "@/config/site";
 
 const stripeClient = new Stripe(process.env.STRIPE_SECRET_KEY!, {
     apiVersion: "2025-06-30.basil",

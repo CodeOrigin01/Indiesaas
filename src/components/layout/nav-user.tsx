@@ -1,20 +1,19 @@
-"use client"
-
-import Link from "next/link"
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
+"use client";
+import Link from"next/link";
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import {
     DropdownMenu,
     DropdownMenuContent,
     DropdownMenuItem,
     DropdownMenuSeparator,
     DropdownMenuTrigger
-} from "@/components/ui/dropdown-menu"
+} from "@/components/ui/dropdown-menu";
 import {
     SidebarMenu,
     SidebarMenuButton,
     SidebarMenuItem,
     useSidebar
-} from "@/components/ui/sidebar"
+} from "@/components/ui/sidebar";
 
 import {
     RiFindReplaceLine,
@@ -25,9 +24,9 @@ import {
     RiUserLine,
     RiLockLine,
     RiBankCardLine
-} from "@remixicon/react"
+} from "@remixicon/react";
 
-import { authClient } from "@/lib/auth-client"
+import { authClient } from "@/lib/auth-client";
 
 // Better Auth UI Profile types
 interface Profile {

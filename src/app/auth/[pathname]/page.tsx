@@ -1,10 +1,10 @@
-import { AuthCard, AuthLoading } from "@daveyplate/better-auth-ui"
-import { authViewPaths } from "@daveyplate/better-auth-ui/server"
-import { ArrowLeft } from "lucide-react"
-import Link from "next/link"
-import { WelcomeToast } from "@/components/layout/auth-loading-toast"
-import { Button } from "@/components/ui/button"
-import type { Metadata } from "next"
+import { AuthCard, AuthLoading } from "@daveyplate/better-auth-ui";
+import { authViewPaths } from "@daveyplate/better-auth-ui/server";
+import { ArrowLeft } from "lucide-react";
+ import Link from"next/link";
+import { WelcomeToast } from "@/components/layout/auth-loading-toast";
+import { Button } from "@/components/ui/button";
+import type { Metadata } from "next";
 
 export const metadata: Metadata = {
     title: "Authentication"

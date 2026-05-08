@@ -1,9 +1,9 @@
-"use client"
-import { motion, useInView } from "framer-motion"
-import Image from "next/image"
-import { useRef } from "react"
-import Marquee from "@/components/ui/marquee"
-import { cn } from "@/lib/utils"
+"use client";
+import { motion, useInView } from "framer-motion";
+ import Image from"next/image";
+import { useRef } from "react";
+ import Marquee from"@/components/ui/marquee";
+import { cn } from "@/lib/utils";
 
 const logos = [
     { img: "/logos/logo-ispum-1.avif" },

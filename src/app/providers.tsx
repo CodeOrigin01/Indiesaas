@@ -1,14 +1,13 @@
-"use client"
-
-import { AuthUIProvider } from "@daveyplate/better-auth-ui"
-import Link from "next/link"
-import { useRouter } from "next/navigation"
-import { ThemeProvider } from "next-themes"
-import type { ReactNode } from "react"
+"use client";
+import { AuthUIProvider } from "@daveyplate/better-auth-ui";
+ import Link from"next/link";
+import { useRouter } from "next/navigation";
+import { ThemeProvider } from "next-themes";
+import type { ReactNode } from "react";
 import NextTopLoader from 'nextjs-toploader';
-import { Toaster } from "sonner"
-import { authClient } from "@/lib/auth-client"
-import { useUploadThing } from "@/lib/uploadthing"
+import { Toaster } from "sonner";
+import { authClient } from "@/lib/auth-client";
+import { useUploadThing } from "@/lib/uploadthing";
 
 export function Providers({ children }: { children: ReactNode }) {
     const router = useRouter()

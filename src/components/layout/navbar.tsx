@@ -1,12 +1,12 @@
-"use client"
-import { SignedIn, SignedOut, UserButton } from "@daveyplate/better-auth-ui"
-import { Menu, X } from "lucide-react"
-import { RiGithubFill } from "@remixicon/react"
-import Image from "next/image"
-import Link from "next/link"
-import React from "react"
-import { ModeToggle } from "./mode-toggle"
-import { Button } from "../ui/button"
+"use client";
+import { SignedIn, SignedOut, UserButton } from "@daveyplate/better-auth-ui";
+import { Menu, X } from "lucide-react";
+import { RiGithubFill } from "@remixicon/react";
+ import Image from"next/image";
+ import Link from"next/link";
+ import React, { useState } from"react";
+import { ModeToggle } from "./mode-toggle";
+import { Button } from "../ui/button";
 import {
     NavigationMenu,
     NavigationMenuContent,
@@ -14,8 +14,8 @@ import {
     NavigationMenuLink,
     NavigationMenuList,
     NavigationMenuTrigger
-} from "../ui/navigation-menu"
-import { Separator } from "../ui/separator"
+} from "../ui/navigation-menu";
+import { Separator } from "../ui/separator";
 import {
     Sheet,
     SheetContent,
@@ -23,8 +23,8 @@ import {
     SheetHeader,
     SheetTitle,
     SheetTrigger
-} from "../ui/sheet"
-import { site } from "@/config/site"
+} from "../ui/sheet";
+import { site } from "@/config/site";
 
 interface RouteProps {
     href: string

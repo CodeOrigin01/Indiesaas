@@ -1,10 +1,9 @@
-"use server"
-
+"use server";
 //Docs: https://www.better-auth.com/docs/plugins/stripe
-import { auth } from "@/lib/auth"
-import type { Subscription } from "@better-auth/stripe"
-import { headers } from "next/headers"
-import Stripe from "stripe"
+import { auth } from "@/lib/auth";
+import type { Subscription } from "@better-auth/stripe";
+import { headers } from "next/headers";
+ import Stripe from"stripe";
 
 const stripeClient = new Stripe(process.env.STRIPE_SECRET_KEY!)
 

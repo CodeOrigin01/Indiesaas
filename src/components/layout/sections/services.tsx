@@ -3,7 +3,7 @@ import {
     CardDescription,
     CardHeader,
     CardTitle
-} from "@/components/ui/card"
+} from "@/components/ui/card";
 
 enum ServiceStatus {
     SOON = 1,
@@ -59,7 +59,6 @@ export const ServicesSection = () => {
                 features that every modern SaaS needs, saving you weeks of
                 development time.
             </h3>
-            <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3" />
 
             <div className="mx-auto grid w-full gap-4 sm:grid-cols-2 lg:w-[60%] lg:grid-cols-2">
                 {serviceList.map(({ title, description }) => (

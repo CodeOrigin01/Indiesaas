@@ -1,9 +1,8 @@
-"use client"
-
-import { useState, useId } from "react"
-import { CheckIcon } from "lucide-react"
-import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group"
-import { Label } from "@/components/ui/label"
+"use client";
+import { useState, useId } from "react";
+import { CheckIcon } from "lucide-react";
+import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
+import { Label } from "@/components/ui/label";
 import {
     Card,
     CardHeader,
@@ -11,9 +10,9 @@ import {
     CardDescription,
     CardContent,
     CardFooter
-} from "@/components/ui/card"
-import { plans } from "@/lib/payments/plans"
-import SubscriptionButton from "./subscription-button"
+} from "@/components/ui/card";
+import { plans } from "@/lib/payments/plans";
+ import SubscriptionButton from"./subscription-button";
 
 interface PlanSelectorProps {
     activeSub: any

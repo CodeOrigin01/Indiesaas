@@ -1,6 +1,6 @@
-import type { icons } from "lucide-react"
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-import { Icon } from "@/components/ui/icon"
+import type { icons } from "lucide-react";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Icon } from "@/components/ui/icon";
 
 interface BenefitsProps {
     icon: string
