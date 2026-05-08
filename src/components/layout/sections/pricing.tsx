@@ -1,4 +1,4 @@
-import { Button } from "@/components/ui/button"
+import { Button } from "@/components/ui/button";
 import {
     Card,
     CardContent,
@@ -6,12 +6,12 @@ import {
     CardFooter,
     CardHeader,
     CardTitle
-} from "@/components/ui/card"
+} from "@/components/ui/card";
 
-enum PopularPlan {
-    NO = 0,
-    YES = 1
-}
+const PopularPlan = {
+    NO: 0,
+    YES: 1
+} as const;
 
 interface PlanProps {
     title: string
@@ -138,8 +138,7 @@ export const PricingSection = () => {
                                 <Button
                                     variant={
                                         popular === PopularPlan?.YES
-                                            ? "default"
-                                            : "secondary"
+                                            ? "default" :"secondary"
                                     }
                                     className="w-full"
                                 >

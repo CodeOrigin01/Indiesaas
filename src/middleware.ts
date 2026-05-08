@@ -1,5 +1,5 @@
-import { getSessionCookie } from "better-auth/cookies"
-import { type NextRequest, NextResponse } from "next/server"
+import { getSessionCookie } from "better-auth/cookies";
+import { type NextRequest, NextResponse } from "next/server";
 
 export async function middleware(request: NextRequest) {
     // Check cookie for optimistic redirects for protected routes

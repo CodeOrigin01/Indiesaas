@@ -1,27 +1,28 @@
-"use client"
+"use client";
 
-import { Slot } from "@radix-ui/react-slot"
-import { RiSkipLeftLine, RiSkipRightLine } from "@remixicon/react"
-import { cva, type VariantProps } from "class-variance-authority"
-import * as React from "react"
-import { Button } from "@/components/ui/button"
-import { Input } from "@/components/ui/input"
-import { Separator } from "@/components/ui/separator"
+import React, { useContext, useState, useEffect, useCallback, useMemo } from 'react';
+import { Slot } from "@radix-ui/react-slot";
+import { RiSkipLeftLine, RiSkipRightLine } from "@remixicon/react";
+import { cva, type VariantProps } from "class-variance-authority";
+ import * as React from"react";
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import { Separator } from "@/components/ui/separator";
 import {
     Sheet,
     SheetContent,
     SheetDescription,
     SheetHeader,
     SheetTitle
-} from "@/components/ui/sheet"
-import { Skeleton } from "@/components/ui/skeleton"
+} from "@/components/ui/sheet";
+import { Skeleton } from "@/components/ui/skeleton";
 import {
     Tooltip,
     TooltipContent,
     TooltipProvider,
     TooltipTrigger
-} from "@/components/ui/tooltip"
-import { cn } from "@/lib/utils"
+} from "@/components/ui/tooltip";
+import { cn } from "@/lib/utils";
 
 const SIDEBAR_COOKIE_NAME = "sidebar_state"
 const SIDEBAR_COOKIE_MAX_AGE = 60 * 60 * 24 * 7
@@ -251,20 +252,16 @@ function Sidebar({
                     "group-data-[collapsible=offcanvas]:w-0",
                     "group-data-[side=right]:rotate-180",
                     variant === "floating" || variant === "inset"
-                        ? "group-data-[collapsible=icon]:w-[calc(var(--sidebar-width-icon)+(--spacing(4)))]"
-                        : "group-data-[collapsible=icon]:w-(--sidebar-width-icon)"
+                        ? "group-data-[collapsible=icon]:w-[calc(var(--sidebar-width-icon)+(--spacing(4)))]" :"group-data-[collapsible=icon]:w-(--sidebar-width-icon)"
                 )}
             />
             <div
                 className={cn(
                     "fixed inset-y-0 z-10 hidden h-svh w-(--sidebar-width) transition-[left,right,width] duration-300 ease-out md:flex",
-                    side === "left"
-                        ? "left-0 group-data-[collapsible=offcanvas]:left-[calc(var(--sidebar-width)*-1)]"
-                        : "right-0 group-data-[collapsible=offcanvas]:right-[calc(var(--sidebar-width)*-1)]",
+                    side === "left" ?"left-0 group-data-[collapsible=offcanvas]:left-[calc(var(--sidebar-width)*-1)]" :"right-0 group-data-[collapsible=offcanvas]:right-[calc(var(--sidebar-width)*-1)]",
                     // Adjust the padding for floating and inset variants.
                     variant === "floating" || variant === "inset"
-                        ? "p-2 group-data-[collapsible=icon]:w-[calc(var(--sidebar-width-icon)+(--spacing(4))+2px)]"
-                        : "group-data-[collapsible=icon]:w-(--sidebar-width-icon) group-data-[side=left]:border-r group-data-[side=right]:border-l",
+                        ? "p-2 group-data-[collapsible=icon]:w-[calc(var(--sidebar-width-icon)+(--spacing(4))+2px)]" :"group-data-[collapsible=icon]:w-(--sidebar-width-icon) group-data-[side=left]:border-r group-data-[side=right]:border-l",
                     className
                 )}
                 {...props}

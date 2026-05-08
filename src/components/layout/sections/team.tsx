@@ -1,9 +1,9 @@
-import Image from "next/image"
-import Link from "next/link"
-import GithubIcon from "@/components/icons/github-icon"
-import LinkedInIcon from "@/components/icons/linkedin-icon"
-import XIcon from "@/components/icons/x-icon"
-import { Card, CardFooter, CardTitle } from "@/components/ui/card"
+import Image from "next/image";
+ import Link from"next/link";
+ import GithubIcon from"@/components/icons/github-icon";
+ import LinkedInIcon from"@/components/icons/linkedin-icon";
+ import XIcon from"@/components/icons/x-icon";
+import { Card, CardFooter, CardTitle } from "@/components/ui/card";
 
 interface TeamProps {
     imageUrl: string

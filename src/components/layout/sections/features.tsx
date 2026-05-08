@@ -5,8 +5,8 @@ import {
     RiDatabase2Line,
     RiFireFill,
     RiStackLine
-} from "@remixicon/react"
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
+} from "@remixicon/react";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 interface FeaturesProps {
     icon: React.ReactNode

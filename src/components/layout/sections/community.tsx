@@ -1,12 +1,12 @@
-import { Github, Star } from "lucide-react"
-import { Button } from "@/components/ui/button"
+import { Github, Star } from "lucide-react";
+import { Button } from "@/components/ui/button";
 import {
     Card,
     CardContent,
     CardFooter,
     CardHeader,
     CardTitle
-} from "@/components/ui/card"
+} from "@/components/ui/card";
 
 export const CommunitySection = () => {
     return (

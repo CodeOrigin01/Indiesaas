@@ -1,10 +1,10 @@
-"use client"
-import { zodResolver } from "@hookform/resolvers/zod"
-import { Building2, Clock, Mail, Phone } from "lucide-react"
-import { useForm } from "react-hook-form"
-import { z } from "zod"
-import { Button } from "@/components/ui/button"
-import { Card, CardContent, CardFooter } from "@/components/ui/card"
+"use client";
+import { zodResolver } from "@hookform/resolvers/zod";
+import { Building2, Clock, Mail, Phone } from "lucide-react";
+import { useForm } from "react-hook-form";
+import { z } from "zod";
+import { Button } from "@/components/ui/button";
+import { Card, CardContent, CardFooter } from "@/components/ui/card";
 import {
     Form,
     FormControl,
@@ -12,17 +12,17 @@ import {
     FormItem,
     FormLabel,
     FormMessage
-} from "@/components/ui/form"
-import { Input } from "@/components/ui/input"
+} from "@/components/ui/form";
+import { Input } from "@/components/ui/input";
 import {
     Select,
     SelectContent,
     SelectItem,
     SelectTrigger,
     SelectValue
-} from "@/components/ui/select"
-import { site } from "@/config/site"
-import { Textarea } from "@/components/ui/textarea"
+} from "@/components/ui/select";
+import { site } from "@/config/site";
+import { Textarea } from "@/components/ui/textarea";
 
 const formSchema = z.object({
     firstName: z.string().min(2).max(255),

@@ -1,18 +1,17 @@
-"use client"
-
-import { RedirectToSignUp, SignedIn } from "@daveyplate/better-auth-ui"
-import { AppSidebar } from "@/components/layout/app-sidebar"
-import { DynamicBreadcrumb } from "@/components/layout/dynamic-breadcrumb"
-import { ModeToggle } from "@/components/layout/mode-toggle"
-import { Separator } from "@/components/ui/separator"
+"use client";
+import { RedirectToSignUp, SignedIn } from "@daveyplate/better-auth-ui";
+import { AppSidebar } from "@/components/layout/app-sidebar";
+import { DynamicBreadcrumb } from "@/components/layout/dynamic-breadcrumb";
+import { ModeToggle } from "@/components/layout/mode-toggle";
+import { Separator } from "@/components/ui/separator";
 import {
     SidebarInset,
     SidebarProvider,
     SidebarTrigger
-} from "@/components/ui/sidebar"
-import { Button } from "@/components/ui/button"
-import Link from "next/link"
-import GithubIcon from "@/components/icons/github-icon"
+} from "@/components/ui/sidebar";
+import { Button } from "@/components/ui/button";
+ import Link from"next/link";
+ import GithubIcon from"@/components/icons/github-icon";
 
 export default function ProtectedPage({
     children

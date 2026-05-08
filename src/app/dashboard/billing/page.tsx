@@ -1,8 +1,8 @@
-import { getActiveSubscription } from "@/lib/payments/actions"
-import { auth } from "@/lib/auth"
-import { PageHeader } from "@/components/layout/page-header"
-import { headers } from "next/headers"
-import CancelSubButton from "./cancel-sub-button"
+import { getActiveSubscription } from "@/lib/payments/actions";
+import { auth } from "@/lib/auth";
+import { PageHeader } from "@/components/layout/page-header";
+import { headers } from "next/headers";
+ import CancelSubButton from"./cancel-sub-button";
 
 import {
     Zap,
@@ -11,8 +11,8 @@ import {
     Users,
     CreditCard,
     User
-} from "lucide-react"
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
+} from "lucide-react";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import {
     Card,
     CardHeader,
@@ -20,8 +20,8 @@ import {
     CardDescription,
     CardContent,
     CardFooter
-} from "@/components/ui/card"
-import PlanSelector from "./plan-selector"
+} from "@/components/ui/card";
+ import PlanSelector from"./plan-selector";
 
 
 export const metadata = {
@@ -121,8 +121,7 @@ export default async function Plans() {
                                                 </span>
                                                 <span className="font-semibold">
                                                     {activeSub.cancelAtPeriodEnd
-                                                        ? "No"
-                                                        : "Yes"}
+                                                        ? "No" :"Yes"}
                                                 </span>
                                             </div>
 
