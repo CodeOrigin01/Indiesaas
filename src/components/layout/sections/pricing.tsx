@@ -15,7 +15,7 @@ const PopularPlan = {
 
 interface PlanProps {
     title: string
-    popular: PopularPlan
+    popular: typeof PopularPlan[keyof typeof PopularPlan]
     price: number
     description: string
     buttonText: string

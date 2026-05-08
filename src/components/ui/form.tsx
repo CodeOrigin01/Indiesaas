@@ -16,6 +16,7 @@ import { cn } from "@/lib/utils";
 import { FormField } from '@/components/ui/form';
 
 
+
 const Form = FormProvider
 
 type FormFieldContextValue<
@@ -176,6 +177,7 @@ export {
     FormLabel,
     FormControl,
     FormDescription,
-    FormMessage,
-    FormField
+    FormMessage
 }
+
+export { FormField };
